@@ -13,7 +13,7 @@
 */
 
 const botoes = document.querySelectorAll(".botao");
-const personagens = document.querySelectorAll(".personagem")
+const personagens = document.querySelectorAll(".personagem");
 
 botoes.forEach((botao, indice) => {
     botao.addEventListener("click", () => {
