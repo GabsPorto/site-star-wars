@@ -27,17 +27,22 @@ main .personagem .imagem {
     width: 100%;
     height: 100%;
     object-fit:fill;
+
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation: fadeBackground;
+    animation-duration: 1.25s;
 }
 
 .conteudo {
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    max-width: 450px;
+    max-width: 380px;
     z-index: 1;
 }
 
@@ -46,17 +51,21 @@ main .personagem .imagem {
     font-size: 48px;
     font-family: "Secular One";
     font-weight: 400;
-    margin-top: 120px;
     margin-bottom: 5px;
-    margin-left: 100px;
+
+    animation: fadeInDown;
+    animation-duration: 1.25s;
 }
 
 .conteudo .descricao {
     color: #ffee00;
     font-family: "Rubik";
+    font-size: 16px;
     line-height: 24px;
-    margin-left: 100px;
-    text-shadow: 0.1em 0.2em #333;
+    text-shadow: 0.1em 0.1em #333;
+
+    animation: fadeInLeft;
+    animation-duration: 1.25s;
 }
 
 .conteudo .logo {
@@ -68,8 +77,10 @@ main .personagem .imagem {
     width: 350px;
     margin-bottom: 30px;
     position: fixed;
-}
 
+    animation: fadeIn;
+    animation-duration: 3s;
+}
 
 .botoes {
     position: fixed;
@@ -90,6 +101,7 @@ main .personagem .imagem {
     background: #000000;
     cursor: pointer;
     border-radius: 50%;
+    transition: 0.2s all ease-in-out;
 }
 
 .botoes .botao img {
